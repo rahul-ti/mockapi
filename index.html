@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>British Batman's Hit List</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-3">
+          <form>
+            <div class="form-group mt-3">
+              <label for="name">Name</label>
+              <input type="text" name="name" id="name" class="form-control mb-3" />
+            </div>
+            <div class="form-group">
+              <label for="city">City</label>
+              <input type="text" name="city" id="city" class="form-control mb-3" />
+            </div>
+            <div class="form-group">
+              <label for="date">Planned Date</label>
+              <input type="date" name="date" id="date" class="form-control mb-3" />
+            </div>
+          </form>
+          <button type="submit" class="btn btn-primary" id="addName">
+            Submit
+          </button>
+        </div>
+        <div class="col-9">
+          <table class="table">
+            <thead class="thead">
+              <th>Name</th>
+              <th>City</th>
+              <th>Date</th>
+              <th></th>
+              <th></th>
+            </thead>
+            <tbody id="tbody">
+              <tr>
+                <td colspan="5">Great, Your List is Finished!</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
